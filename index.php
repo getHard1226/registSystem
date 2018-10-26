@@ -3,27 +3,29 @@
 <head>
 	<meta charset = "UTF-8">
 	<title>糞システム</title>
+	<script type = "text/javascript" src = "js/inputCheck.js"></script>
 </head>
 
 <body>
 <?php
-	echo "<form action = ¥"welcom.php¥" method = ¥"POST¥">";
-	echo "<table>";
-		echo "<tr>";
-			echo "<td>ユーザ名 : </td>";
-			echo "<td>"
-				echo "<input type = ¥"text¥" name = ¥"userName¥">";
-			echo "</td>"
-		echo "</tr>";
+	echo '<form action = "welcome.php" method = "POST">';
+	echo '<table id = "input">';
+		echo '<tr>';
+			echo '<td>ユーザ名 : </td>';
+			echo '<td>';
+				echo '<input type = "text" name = "userName" id = "uName" onchange = "nCheck()">';
+			echo '</td>';
+		echo '</tr>';
 
-		echo "<tr>";
-			echo "<td>パスワード : </td>";
-			echo "<td>";
-				echo "<input type = ¥"test¥" name = ¥"userPwd¥">";
-			echo "</td>";
-		echo "</tr>";
-	echo "</table>";
-	echo "</form>";
+		echo '<tr>';
+			echo '<td>パスワード : </td>';
+			echo '<td>';
+				echo '<input type = "texe" name = "userPwd" id = "uPwd" onchange = "pCheck()">';
+			echo '</td>';
+		echo '</tr>';
+	echo '</table>';
+	echo '<input type = "submit" value = "ログイン" id = "login" disabled>';
+	echo '</form>';
 ?>
 </body>
 </html>
