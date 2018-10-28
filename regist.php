@@ -12,21 +12,21 @@
 		echo '<tr>';
 			echo '<td>ユーザ名 :</td>';
 			echo '<td>';
-				echo '<input type = "text" name = "userName" id = "uName" onchange = "nCheck()">';
+				echo '<input type = "text" name = "userName" id = "uName" onblur = "inCheck(\'regist\')">';
 			echo'</td>';
 		echo '</tr>';
 
 		echo '<tr>';
 			echo '<td>パスワード :</td>';
 			echo '<td>';
-				echo '<input type = "text" name = "userPwd" id = "uPwd" onchange = "pCheck()">';
+				echo '<input type = "text" name = "userPwd" id = "uPwd" onblur = "inCheck(\'regist\')">';
 			echo '</td>';
 		echo '</tr>';
 
 		echo '<tr>';
 			echo '<td>メールアドレス</td>';
 			echo '<td>';
-				echo '<input type = "text" name = "userMail" id = "uMail" onchange = "mCheck(\'regist\')">';
+				echo '<input type = "text" name = "userMail" id = "uMail" onblur = "inCheck(\'regist\')">';
 			echo '</td>';
 		echo '</tr>';
 	echo '</table>';

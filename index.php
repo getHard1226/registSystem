@@ -13,14 +13,14 @@
 		echo '<tr>';
 			echo '<td>ユーザ名 : </td>';
 			echo '<td>';
-				echo '<input type = "text" name = "userName" id = "uName" onchange = "nCheck()">';
+				echo '<input type = "text" name = "userName" id = "uName" onblur = "inCheck(\'index\')">';
 			echo '</td>';
 		echo '</tr>';
 
 		echo '<tr>';
 			echo '<td>パスワード : </td>';
 			echo '<td>';
-				echo '<input type = "texe" name = "userPwd" id = "uPwd" onchange = "pCheck()">';
+				echo '<input type = "texe" name = "userPwd" id = "uPwd" onblur = "inCheck(\'index\')">';
 			echo '</td>';
 		echo '</tr>';
 	echo '</table>';
