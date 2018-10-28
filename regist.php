@@ -3,7 +3,7 @@
 <head>
 	<meta charset = "UTF-8">
 	<title>登録</title>
-	<script type = "text/javascript" src = "js/registCheck.js"></script>
+	<script type = "text/javascript" src = "js/inputCheck.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 		echo '<tr>';
 			echo '<td>メールアドレス</td>';
 			echo '<td>';
-				echo '<input type = "text" name = "userMail" id = "uMail" onchange = "mCheck()">';
+				echo '<input type = "text" name = "userMail" id = "uMail" onchange = "mCheck(\'regist\')">';
 			echo '</td>';
 		echo '</tr>';
 	echo '</table>';

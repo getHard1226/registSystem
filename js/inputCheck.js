@@ -1,5 +1,6 @@
 var nameFlg = false;
 var pwdFlg = false;
+var mailFlg = false;
 
 function nCheck() {
 	var name = document.getElementById('uName').value;
@@ -10,8 +11,8 @@ function nCheck() {
 	} else {
 		nameFlg = false;
 	}
-	
-	judge();
+
+	mCheck();	
 }
 
 function pCheck() {
@@ -24,11 +25,28 @@ function pCheck() {
 		pwdFlg = false;
 	}
 
+	mCheck();
+}
+
+function mCheck(arg) {
+	if (arg == 'regist') {
+		var mail = document.getElementById('uMail').value;
+		var mailCount = mail.length;
+
+		if(mailCount > 0) {
+			mailFlg = true;
+		} else {
+			mailFlg = false;
+		}
+	} else {
+		mailFlg = true;
+	}
+
 	judge();
 }
 
 function judge() {
-	if (nameFlg && pwdFlg) {
+	if (nameFlg && pwdFlg &&mailFlg) {
 		document.getElementById('login').disabled = false;
 	} else {
 		document.getElementById('login').disabled = true;
