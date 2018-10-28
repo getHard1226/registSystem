@@ -7,8 +7,8 @@
 
 <body>
 <?php
-	$uName = $_POST['userName'];
-	$uPwd = $_POST['userPwd'];
+	session_start();
+	$uName = $_SESSION['userName'];
 	echo 'ようこそ' .$uName. '様</br>';
 ?>
 </body>

@@ -8,7 +8,7 @@
 
 <body>
 <?php
-	echo '<form action = "welcome.php" method = "POST">';
+	echo '<form action = "check.php" method = "POST">';
 	echo '<table id = "input">';
 		echo '<tr>';
 			echo '<td>ユーザ名 : </td>';
@@ -26,6 +26,7 @@
 	echo '</table>';
 	echo '<input type = "submit" value = "ログイン" id = "login" disabled>';
 	echo '</form>';
+	echo '<a href = "regist.php">登録する</a>';
 ?>
 </body>
 </html>
