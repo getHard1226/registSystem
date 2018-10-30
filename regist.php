@@ -8,7 +8,12 @@
 
 <body>
 <?php
-	
+	session_start();
+	if (isset($_SESSION['registFlg'])) {
+		if ($_SESSION['registFlg'] == '0') {
+			echo '登録済みのユーザです。';
+		}
+	}
 	echo '<form action = "registCheck.php" method = "POST">';
 		echo '<table>';
 			echo '<tr>';

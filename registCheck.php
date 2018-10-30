@@ -6,6 +6,7 @@
 <body>
 
 <?php
+	session_start();
 	$userName = $_POST['userName'];
 	$userPwd = $_POST['userPwd'];
 	$userMail = $_POST['userMail'];
@@ -26,6 +27,7 @@
 	$result = $stmt->fetchColumn();
 
 	if($result > 0) {
+		$_SESSION['registFlg'] = '0';
 		header("Location:./regist.php");
 		exit;
 	}

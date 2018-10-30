@@ -8,6 +8,12 @@
 
 <body>
 <?php
+	session_start();
+	if (isset($_SESSION['registFlg'])) {
+		if ($_SESSION['registFlg'] == '0') {
+			echo '登録されていません。';
+		}	
+	}
 	echo '<form action = "check.php" method = "POST">';
 	echo '<table id = "input">';
 		echo '<tr>';

@@ -33,9 +33,11 @@ $stmt->execute();
 $result = $stmt->fetchColumn();
 
 if ($result > 0) {
+	$_SESSION['registFlg'] = '1';
 	header("Location:./welcome.php");
 	exit;
 } else {
+	$_SESSION['registFlg'] = '0';
 	header("Location:./index.php");
 	exit;	
 }
